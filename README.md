@@ -10,4 +10,4 @@ Need to complete the installation and configration for `mirai` image manually.
 I have not tested the docker-compose script :)
 
 ## Thanks
-Thanks ChatGPT wrote the code python for me :)
+Thanks ChatGPT wrote the python codes for me :)
