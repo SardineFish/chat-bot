@@ -1,0 +1,6 @@
+{
+    "id": 123456789,
+    "chat": "http://chat:3000",
+    "mirai": "ws://mirai:3000",
+    "verifyKey": "xxxxxxxxxxxxxxxxxxxxx"
+}

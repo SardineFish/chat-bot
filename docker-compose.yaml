@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  chat-bot:
+    container_name: chat-bot
+    build: ./chat-bot
+    links:
+      - mirai:mirai
+      - chat-api:chat
+    depends_on:
+      mirai:
+        condition: service_started
+      chat-api:
+        condition: service_started
+    restart: unless-stopped
+  chat-api:
+    container_name: chat-api
+    build: ./chat-api
+    restart: unless-stopped
+  mirai:
+    container_name: mirai
+    build: ./mirai
+    restart: unless-stopped
+networks:
+  default:
+    external: true
+    name: chat-bot-network

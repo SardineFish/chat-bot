@@ -1,0 +1,5 @@
+{
+  "email": "xxx@example.com",
+  "password": "password",
+  "proxy": "socks5://proxy:1080"
+}
